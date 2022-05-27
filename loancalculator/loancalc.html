@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="loancalc.css" type="text/css">
+        <title>Loan Calculator</title>
+        <style>
+            body {
+                background: rgb(131,58,180);
+                    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(136,51,51,0.8883928571428571) 50%, rgba(252,176,69,1) 100%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="loancal">
+            <h1>Loan Calculator</h1>
+            <p>Loan Amount: N<input type="number" id="amount" min="1" max="5000000" 
+                onchange="computeLoan()"></p>
+            <p>Interest Rate: %<input type="number" id="interest_rate" min="0"
+                max="100" step=".1" onchange="computeLoan()"></p>
+            <p>Month's To Pay: <input type="number" id="months" min="1" max="300"
+                step="1" onchange="computeLoan()"></p>
+            
+            <h2 id="payment"></h2>
+        </div>
+
+        <script src="loancalc.js"></script>
+
+    </body>
+    <footer>
+        <span class="text-style-1"> © 2022 <span style="color: #e31e23;">An active Project of Captain0la</span> Powered by IETECH v2022
+                
+        </span>
+    </footer>
+</html>
